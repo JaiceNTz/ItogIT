@@ -1,0 +1,19 @@
+﻿<Page x:Class="HouseTempleApp.AppPage.PageAddUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HouseTempleApp.AppPage"
+      mc:Ignorable="d" 
+      Title="PageAddUser" d:DesignHeight="115.025" d:DesignWidth="311.008">
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Height="Auto" Background="{StaticResource LightGrey}"/>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Добавление нового пользователя"  FontSize="18" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+            <TextBlock Text="Выберите роль новго пользователя" Foreground="{StaticResource DarkBlue}" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+            <Button Content="Риэлтор" Click="AddUser_Click" x:Name="Rieltor"/>
+            <Button Content="Клиент" Click="AddUser_Click" x:Name="Client"/>
+        </StackPanel>
+    </Grid>
+</Page>

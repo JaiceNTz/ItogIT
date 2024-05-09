@@ -1,0 +1,23 @@
+﻿<Page x:Class="HouseTempleApp.AppPage.PageDally"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HouseTempleApp.AppPage"
+      mc:Ignorable="d" 
+      Title="PageDally" d:DesignHeight="52.335" d:DesignWidth="389.188">
+
+    <Grid>
+        <DataGrid x:Name="DataGridShare" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" HorizontalScrollBarVisibility="Visible">
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Width="*" Header="Адрес города" Binding="{Binding Address_City}"/>
+                <DataGridTextColumn IsReadOnly="True" Width="*" Header="Широта" Binding="{Binding Coordinate_longitude}"/>
+                <DataGridTextColumn IsReadOnly="True" Width="*" Header="Долгота" Binding="{Binding Coordinate_latitude}"/>
+                <DataGridTextColumn IsReadOnly="True" Width="*" Header="Адрес улицы" Binding="{Binding Address_Street}"/>
+                <DataGridTextColumn IsReadOnly="True" Width="*" Header="Адрес дома" Binding="{Binding Address_House}"/>
+                <DataGridTextColumn IsReadOnly="True" Width="*" Header="Квартира" Binding="{Binding Address_Number}"/>
+                <DataGridTextColumn IsReadOnly="True" Width="*" Header="Цена" Binding="{Binding TotalArea}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

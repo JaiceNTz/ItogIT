@@ -1,0 +1,62 @@
+﻿<Page x:Class="HouseTempleApp.AppPage.PageEditUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HouseTempleApp.AppPage"
+      mc:Ignorable="d" 
+      Title="PageEditUser">
+
+    <Grid Background="White">
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15">
+            <TextBlock x:Name="TextBlockLabel" Text="Карточка клиента" TextAlignment="Center" FontWeight="Bold" FontSize="22" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,15">
+                <TextBlock Text="Логин*:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                <TextBox x:Name="TextBoxLogin" IsEnabled="False" Background="{StaticResource Grey}" Width="200" HorizontalAlignment="Right"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,15">
+                <TextBlock x:Name="TextBlockLastName" Text="Имя:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                <TextBox x:Name="TextBoxLastName"  Width="200" HorizontalAlignment="Right"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,15">
+                <TextBlock x:Name="TextBlockFirstName" Text="Фамилия:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                <TextBox x:Name="TextBoxFirstName"  Width="200" HorizontalAlignment="Right"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,15">
+                <TextBlock x:Name="TextBlockMidlName" Text="Отчество:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                <TextBox x:Name="TextBoxMidlName" Width="200" HorizontalAlignment="Right"/>
+            </StackPanel>
+
+            <TextBlock Text="Поля, обозначеные * - являются обязательными к заполнению" HorizontalAlignment="Right" Margin="15,0,0,10" TextWrapping="Wrap" Foreground="{StaticResource DarkGrey3}" Width="309"/>
+            <TextBlock x:Name="WarningContactItem" FontWeight="Bold" Text="Номер телефона или Email должны быть обязательно заполнены" HorizontalAlignment="Right" Margin="15,0,0,10" TextWrapping="Wrap" Foreground="{StaticResource DarkGrey3}" Width="310"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,15">
+                <TextBlock Text="Номер телефона:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                <TextBox x:Name="TextBoxNumberPhone"  Width="200" HorizontalAlignment="Right"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,15">
+                <TextBlock Text="Введите Email:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                <TextBox x:Name="TextBoxEmail"  Width="200" HorizontalAlignment="Right"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,17,0,15">
+                <TextBlock Text="Введите старый пароль:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                <PasswordBox x:Name="PasswordBoxOldPassword"  Width="200" HorizontalAlignment="Right"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,15">
+                <TextBlock Text="Введите новый пароль:" VerticalAlignment="Center" Margin="0,0,15,0"/>
+                <PasswordBox x:Name="PasswordBoxNewPassword"  Width="200" HorizontalAlignment="Right"/>
+            </StackPanel>
+
+            <TextBlock x:Name="TextBlockWarning"  Text="" FontWeight="Bold" TextAlignment="Center" Foreground="{StaticResource Warning}" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14"/>
+            <Button Content="Сохранить изменения" Click="EditButton_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
