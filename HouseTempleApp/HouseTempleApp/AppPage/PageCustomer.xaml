@@ -8,5 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageCustomer">
 
-    <Grid/>
+
+    <Grid>
+        <Button Click="Redaction_Card" Content="Редактировать карточку профиля" Foreground="{StaticResource DarkGrey3}"  Background="{StaticResource DarkGrey}" FontWeight="Bold" Margin="218,202,218,212"/>
+    </Grid>
 </Page>

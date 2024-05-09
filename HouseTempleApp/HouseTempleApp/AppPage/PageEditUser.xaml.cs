@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HouseTempleApp.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -72,7 +73,16 @@ namespace HouseTempleApp.AppPage
         }
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("AppPage/PageRieltor.xaml", UriKind.Relative));
+            var user = AppConnect.HouseDB.User.FirstOrDefault();
+
+            if (user.IdRole == 2)
+            {
+                this.NavigationService.Navigate(new Uri("AppPage/PageRieltor.xaml", UriKind.Relative));
+            }
+            else
+            {
+                this.NavigationService.Navigate(new Uri("AppPage/PageCustomer.xaml", UriKind.Relative));
+            }
 
             var bc = new BrushConverter();
             string messageWarning = "";

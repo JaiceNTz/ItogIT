@@ -24,5 +24,9 @@ namespace HouseTempleApp.AppPage
         {
             InitializeComponent();
         }
+        private void Redaction_Card(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("AppPage/PageEditUser.xaml", UriKind.Relative));
+        }
     }
 }
